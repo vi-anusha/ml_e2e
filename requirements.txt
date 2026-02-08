@@ -4,4 +4,7 @@ scikit-learn
 matplotlib
 seaborn
 joblib
+catboost
+xgboost
+lightgbm
 -e .
