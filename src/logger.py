@@ -1,8 +1,8 @@
 import logging
 import os
 from datetime import datetime
-import sys
-from exception import CustomException
+# import sys
+# from src.exception import CustomException
 
 LOG_FILE = f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
 logs_path = os.path.join(os.getcwd(), "logs", LOG_FILE)
@@ -16,9 +16,9 @@ logging.basicConfig(
     level=logging.INFO,
 )
 
-if __name__ == "__main__":
-    try:
-        a = 1/0
-    except Exception as e:
-        logging.info("Divide by 0 error")
-        raise CustomException(e, sys)
+# if __name__ == "__main__":
+#     try:
+#         a = 1/0
+#     except Exception as e:
+#         logging.info("Divide by 0 error")
+#         raise CustomException(e, sys)
