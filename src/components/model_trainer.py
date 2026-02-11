@@ -44,7 +44,7 @@ class ModelTrainer:
                 "XGBClassifier": XGBRegressor(),
                 "AdaBoost Classifier": AdaBoostRegressor(),
             }
-
+            
             model_report:dict = evaluate_model(X_train, y_train, X_test, y_test, models)
 
             # Best model score from dict
