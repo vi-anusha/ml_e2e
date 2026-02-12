@@ -2,7 +2,6 @@ import os
 import sys
 from dataclasses import dataclass
 
-from xgboost import XGBRegressor
 from sklearn.ensemble import (
     AdaBoostRegressor,
     GradientBoostingRegressor,
@@ -41,7 +40,6 @@ class ModelTrainer:
                 "Gradient Boosting": GradientBoostingRegressor(),
                 "Linear Regression": LinearRegression(),
                 "K-Neighbors Classifier": KNeighborsRegressor(),
-                "XGBClassifier": XGBRegressor(),
                 "AdaBoost Classifier": AdaBoostRegressor(),
             }
             
